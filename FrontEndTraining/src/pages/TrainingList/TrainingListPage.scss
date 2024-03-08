@@ -1,0 +1,58 @@
+.training-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  h1 {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+
+  .next,
+  .prev {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    stroke: none;
+    fill: none;
+  }
+
+  &:disabled {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.pages {
+  color: whitesmoke;
+}
+
+.buttonAdd {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+
+  .add {
+    width: 40px;
+    height: 40px;
+    stroke: none;
+    fill: none;
+  }
+}
+
+.linkList {
+  height: 50px;
+  width: 50px;
+  margin-left: 25px;
+}

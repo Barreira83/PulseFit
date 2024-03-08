@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  z-index: 1000;
+  p {
+    margin: 1vh;
+  }
+  p a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    margin: 0.4vw;
+  }
+  p a:hover {
+    color: chocolate;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    p a {
+      margin: 2px;
+    }
+  }
+}

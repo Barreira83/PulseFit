@@ -1,0 +1,140 @@
+.container-config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+
+  select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2%;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #3d3d3d;
+    color: whitesmoke;
+  }
+
+  .routine-delete {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2%;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #3d3d3d;
+    color: whitesmoke;
+    margin-bottom: 2vh;
+    &:hover {
+      background-color: chocolate;
+    }
+  }
+
+  .pdf-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2%;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #3d3d3d;
+    color: whitesmoke;
+    &:hover {
+      background-color: chocolate;
+    }
+  }
+}
+
+.container-print {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+  margin: 2vh;
+
+  h1 {
+    color: #3d3d3d;
+  }
+  h2 {
+    color: #3d3d3d;
+  }
+  h3 {
+    color: #3d3d3d;
+
+    overflow: hidden;
+  }
+  p {
+    color: #3d3d3d;
+    margin: 2vh;
+  }
+  .label-number {
+    color: #3d3d3d;
+    text-align: center;
+  }
+  .title-routine {
+    text-align: center;
+    margin-top: 2vh;
+  }
+
+  .description-routine {
+    text-align: center;
+  }
+  .list-router-training {
+    min-width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .delete {
+    width: 30px;
+    height: 30px;
+  }
+  .routine-training-name {
+    min-width: 20vw;
+  }
+  .list-format {
+    div {
+      flex: 1;
+    }
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+.container-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 60vw;
+}
+
+@media (max-width: 600px) {
+  .container-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 60vw;
+    margin-top: 2vh;
+  }
+  .list-name-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-router-training {
+    .list-format {
+      margin: 2vh;
+      .delete {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

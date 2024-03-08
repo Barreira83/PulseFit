@@ -1,0 +1,46 @@
+{
+  "type": "module",
+  "name": "plantillaapienteno",
+  "version": "1.0.0",
+  "description": "Api de entreno, orientada a trabajadores de centro deportivo",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node app.js",
+    "initDb": "node src/db/initDb.js",
+    "dropDb": "node src/db/dropDb.js",
+    "resetDb": "node src/db/dropDb.js && node src/db/initDb.js && node src/db/populateDb.js",
+    "populateDb": "node src/db/populateDb.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.3",
+    "eslint": "^8.55.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "libvips": "^0.0.2",
+    "mysql2": "^3.6.5",
+    "nanoid": "^5.0.4",
+    "nodemailer": "^6.9.7",
+    "sharp": "^0.33.0",
+    "url": "^0.11.3",
+    "uuid": "^9.0.1"
+  }
+}

@@ -1,0 +1,26 @@
+.home {
+  min-height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    text-shadow: -2px -2px 1px #000;
+  }
+}
+
+.main-title {
+  text-align: center;
+  font-size: clamp(40px, 6vw, 80px);
+  color: whitesmoke;
+}

@@ -1,0 +1,13 @@
+.status-message {
+  margin: 1rem;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  border-radius: 5px;
+
+  &.shake {
+    animation: shake 0.5s ease-in-out;
+  }
+}
+.error-message {
+  margin: 1rem;
+}

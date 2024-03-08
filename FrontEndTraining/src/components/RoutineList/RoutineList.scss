@@ -1,0 +1,41 @@
+.routine-training-name {
+  min-width: 40vw;
+}
+.routine-h2 {
+  color: white;
+}
+
+.number-imput {
+  max-width: 5vw;
+}
+
+.label-number {
+  min-width: 10vw;
+  color: white;
+}
+
+.list-format {
+  display: flex;
+  align-items: center;
+  margin: 1vh;
+}
+.series-reps {
+  display: flex;
+  flex-direction: column;
+  min-width: 15vw;
+
+  margin-right: 3vw;
+}
+
+@media (max-width: 600px) {
+  .list-format {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+  }
+
+  .number-imput {
+    max-width: 8vw;
+  }
+}

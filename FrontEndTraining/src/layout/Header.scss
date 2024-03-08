@@ -1,0 +1,31 @@
+.header {
+  background-color: #3d3d3d;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+.menu {
+  margin: auto 2vw auto 2vw;
+}
+.welcome {
+  margin: 2vw;
+  color: whitesmoke;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  color: whitesmoke;
+
+  .nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: chocolate;
+  }
+}

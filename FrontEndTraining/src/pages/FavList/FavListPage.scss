@@ -1,0 +1,18 @@
+.training-list-fav {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+  h1 {
+    text-align: center;
+    margin: 4vh;
+  }
+  p {
+    color: whitesmoke;
+    text-align: center;
+  }
+  .numb-likes {
+    margin: 0;
+    color: black;
+  }
+}

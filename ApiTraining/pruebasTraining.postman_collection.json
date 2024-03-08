@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "39b96373-37b1-4857-b5bd-a222da9ba170",
+		"name": "pruebasTraining",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31342376"
+	},
+	"item": [
+		{
+			"name": "Register normal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"name\": \"patata\",\n    \"email\":\"pruebaPatata@email.com\",\n    \"password\":\"123456\",\n    \"rol\":\"patata\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login Patata normal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"email\":\"pruebaPatata@email.com\",\n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Like Patata a training 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sIjoibm9ybWFsIiwiaWF0IjoxNzAyNzI5OTExLCJleHAiOjE3MDUzMjE5MTF9.LC_vwSxjK8EKtvRu8-YJngjE4mU1ySmEhAg0OsXIYv8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "localhost:3001/like/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLike patata  a entreno 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sIjoibm9ybWFsIiwiaWF0IjoxNzAyNzI5OTExLCJleHAiOjE3MDUzMjE5MTF9.LC_vwSxjK8EKtvRu8-YJngjE4mU1ySmEhAg0OsXIYv8"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3001/like/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Favorito Patata a entreno 5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sIjoibm9ybWFsIiwiaWF0IjoxNzAyNzI5OTExLCJleHAiOjE3MDUzMjE5MTF9.LC_vwSxjK8EKtvRu8-YJngjE4mU1ySmEhAg0OsXIYv8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "localhost:3001/fav/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Favorito Patata a entreno 5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sIjoibm9ybWFsIiwiaWF0IjoxNzAyNzI5OTExLCJleHAiOjE3MDUzMjE5MTF9.LC_vwSxjK8EKtvRu8-YJngjE4mU1ySmEhAg0OsXIYv8"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3001/fav/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Login Pepe admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \n    \"email\":\"bar2@gmail\",\n    \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Crea entreno con Pepe admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "name",
+							"value": "primer entreno creado",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Pasar el rato",
+							"type": "text"
+						},
+						{
+							"key": "typology",
+							"value": "sedentarismo",
+							"type": "text"
+						},
+						{
+							"key": "muscle_group",
+							"value": "bajo lumbar",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/training"
+			},
+			"response": []
+		},
+		{
+			"name": "Modifica entreno 1 con Pepe admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Modificar primer entreno",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Modificar entreno",
+							"type": "text"
+						},
+						{
+							"key": "typology",
+							"value": "Pasar el rato",
+							"type": "text"
+						},
+						{
+							"key": "muscle_group",
+							"value": "bajo lumbar",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/training/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar entreno 1 con Pepe admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3001/training/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Pepe busca entrenos con tipologia fuerza",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/training?typology=fuerza",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"training"
+					],
+					"query": [
+						{
+							"key": "typology",
+							"value": "fuerza"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pepe busca entreno 5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3001/training/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Patata  busca fuerza y pierna",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI3Mjk5NjMsImV4cCI6MTcwNTMyMTk2M30.FcrKLyhYqxQXhKXQjCdCMsv307FVy6vil7YFBfOpWq8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/training?typology=fuerza&muscle_group=pierna",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"training"
+					],
+					"query": [
+						{
+							"key": "typology",
+							"value": "fuerza"
+						},
+						{
+							"key": "muscle_group",
+							"value": "pierna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patata (normal user) borra su propio usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sIjoibm9ybWFsIiwiaWF0IjoxNzAyNzI5OTExLCJleHAiOjE3MDUzMjE5MTF9.LC_vwSxjK8EKtvRu8-YJngjE4mU1ySmEhAg0OsXIYv8"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/removeUser/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Pepe (admin user) borra a otro usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sIjoiYWRtaW4iLCJpYXQiOjE3MDI2NTA3ODcsImV4cCI6MTcwNTI0Mjc4N30.r_OU9NkhfTlzC3hw9fZqixNIp4XOy5ZowBNRcRA5ZLQ"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/removeUser/2"
+			},
+			"response": []
+		}
+	]
+}

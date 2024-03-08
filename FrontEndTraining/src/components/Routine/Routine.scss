@@ -1,0 +1,26 @@
+.routine {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1vh;
+  padding: 1vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  a,
+  .routine-name,
+  .routine-description {
+    text-decoration: none;
+    color: #3d3d3d;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+}

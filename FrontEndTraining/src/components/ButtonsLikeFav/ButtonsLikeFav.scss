@@ -1,0 +1,45 @@
+.likes-container {
+  text-align: center;
+}
+
+.LIKE {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.LIKE::before {
+  content: "\2764";
+  font-size: 30px;
+  color: rgb(81, 76, 76);
+}
+
+.LIKE.red::before {
+  color: red;
+}
+
+.FAV {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(-16%);
+}
+
+.FAV::before {
+  content: "\2606";
+  font-size: 40px;
+  color: rgb(81, 76, 76);
+}
+
+.FAV.red::before {
+  color: gold;
+  content: "\2606";
+  font-size: 40px;
+}
+
+.number-likes {
+  margin-top: -0.6vh;
+  text-align: center;
+}

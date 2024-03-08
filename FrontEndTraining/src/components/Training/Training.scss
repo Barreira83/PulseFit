@@ -1,0 +1,106 @@
+.all-trainings {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+}
+
+.list-training {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 400px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #3d3d3d;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      // object-fit: contain;
+    }
+  }
+}
+.training-name {
+  margin-top: 1vh;
+}
+
+.botones {
+  display: flex;
+  justify-content: end;
+}
+.count-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 3vh;
+}
+.numb-likes {
+  margin: 0;
+  color: black
+
+}
+
+/* Media query para hacerlo responsive */
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.LIKE {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.LIKE::before {
+  content: "\2764";
+  font-size: 30px;
+  color: rgb(81, 76, 76);
+}
+
+.LIKE.red::before {
+  color: red;
+}
+
+.FAV {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(-16%);
+}
+
+.FAV::before {
+  content: "\2606";
+  font-size: 40px;
+  color: rgb(81, 76, 76);
+}
+
+.FAV.red::before {
+  color: gold;
+  content: "\2606";
+  font-size: 40px;
+}
+
+.number-likes {
+  margin-top: -0.6vh;
+  text-align: center;
+}
+

@@ -1,0 +1,26 @@
+.not-found-page {
+  background-image: url("/pic-404.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.not-found-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  h1 {
+    text-shadow: -2px -2px 1px #000;
+  }
+}
+.not-found-title {
+  text-align: center;
+  font-size: 6em;
+  color: whitesmoke;
+}
